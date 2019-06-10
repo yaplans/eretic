@@ -1,0 +1,2 @@
+# eretic
+site eretic
