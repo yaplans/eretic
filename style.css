@@ -1,11 +1,67 @@
 body {
-background-color:#b0c4de;
+	background-color:#b0c4de;
 }
 
+/*
+ * и четные и нечетные
+.d1:nth-child(even), .d1:nth-child(odd) {
+* тоже самое
+* .d1:nth-child(n) { 
+* т.е. каждый n-ый
+*/
+.d1:nth-child(n) {
+font-size: 5em;
+text-align: center;
+}
 
 .d1 {
-width: 100px; 
-height: 100px;
-background: #83A7C9;
-border-radius: 50%;
+	width: 100px; 
+	height: 100px;
+	background: #83A7C9;
+	border-radius: 50%;
+	width: 100px;
+	
 }
+
+.s2 {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	width: 100px;}
+.s3 {
+	display:grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100px;
+}
+
+.s1{
+transition: all 0.5s ease-in-out;
+transform: translateY(-1000px);
+}
+
+.s1-move{
+transform: translateY(0px);
+}
+
+.s2{
+transition: all 0.5s ease-in-out;
+transform: translateY(-1000px);
+}
+
+.s2-move{
+transform: translateY(0px);
+}
+
+.s3{
+transition: all 0.5s ease-in-out;
+transform: translateY(-1000px);
+}
+
+.s3-move{
+transform: translateY(0px);
+}
+
+
+
+
